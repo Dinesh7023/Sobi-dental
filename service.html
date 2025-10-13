@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Sobi's Elite Dental Care : Best dental clinic in Aruppukottai</title>
+    <link rel="icon" type="image/jpg" href="image/logo.png">
+    <meta name="title" content="Dr Sobi's Elite Dental Care : Best dental clinic in Aruppukottai">
+
+    <meta name="description"
+        content="Visit Dr Sobi's Elite Dental Care is the leading dental clinic in Aruppukottai, offering advanced, painless, and affordable dental treatments by experienced dentists. Book your appointment today for a healthy smile!">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-ZF4Vj8+n+03R+G9vx3r35yQq4/4MjfKIR5i6gOOpvI0OfsyU4yaMCZrq7g+Jj4XzgdVc1u2Xe68KO/3bCw3gHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <style>
+        .slider-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            overflow: hidden;
+            margin: 20px auto;
+        }
+
+        .img-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .img-wrapper.after {
+            clip-path: inset(0 0 0 50%);
+            z-index: 2;
+        }
+
+        .img-wrapper.before {
+            z-index: 1;
+        }
+
+        .slider {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            z-index: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar section -->
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container nav_box">
+            <img src="image/logo.svg" class="logo" alt><br>
+            <h1><a class="navbar-brand" href="index.html">Dr.Sobi's Elite Dental
+                    Care</a></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#about_section">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="service.html">
+                            Services
+                        </a>
+                    </li>
+                </ul>
+                <a href="#contact_us" class="book"><button type="button" class="btn btn-primary book_ap">Book
+                        Appointment</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousal -->
+    <section class="carousel" id="carousel">
+        <div class="carousel-slide active">
+            <div class="container">
+                <img class="bannar" src="image/banner.webp" alt="Dental Care 1">
+                <div class="carousel-text">
+                    <h1>We Listen, We Care,</h1>
+                    <h2>You Smile</h2>
+                    <p>Comprehensive dental care for all ages - gentle,
+                        advanced and personalizes</p>
+                    <div class="buttons">
+                        <a href="https://wa.me/919600492308" class="btn book_now">Book Now</a>
+                        <a href="#contact_us" class="btn btn-primary contact_us">Contact
+                            US</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <div class="container">
+                <img src="image/banner1.webp" alt="Dental Care 2">
+                <div class="carousel-text">
+                    <h1>We Listen, We Care,</h1>
+                    <h2>You Smile</h2>
+                    <p>Comprehensive dental care for all ages - gentle,
+                        advanced and personalizes</p>
+                    <div class="buttons">
+                        <a href="https://wa.me/919600492308 class=" btn book_now">Book Now</a>
+                        <a href="#contact_us" class="btn btn-primary contact_us">Contact
+                            US</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <div class="container">
+                <img class="bannar" src="image/banner.webp" alt="Dental Care 3">
+                <div class="carousel-text">
+                    <h1>We Listen, We Care,</h1>
+                    <h2>You Smile</h2>
+                    <p>Comprehensive dental care for all ages - gentle,
+                        advanced and personalizes</p>
+                    <div class="buttons">
+                        <a href="https://wa.me/919600492308" class="btn book_now">Book Now</a>
+                        <a href="#contact_us" class="btn btn-primary contact_us">Contact
+                            US</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-indicators">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+    </section>
+
+    <!-- service section -->
+
+    <section class="service10">
+        <h1>
+            We offer a whole range of treatments for you, your family and
+            friends
+        </h1>
+        <a href="https://wa.me/919600492308">
+            <img src="image/whatsapp.webp" class="whatsapp" alt></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1 col-3">
+                    <img src="image/icon1.webp" class="service_img1" alt>
+                </div>
+                <div class="col-md-5 col-9 service_text">
+                    <h3>Root Canal Treatment(RCT)</h3>
+                    <p>A procedure to save and restore a severely infected
+                        or damaged tooth by removing the infected
+                        pulp. It helps relieve pain and prevents further
+                        infection.</p>
+                </div>
+                <div class="col-md-1 col-3">
+                    <img src="image/icon2.webp" class="service_img1" alt>
+                </div>
+                <div class="col-md-5 col-9 service_text">
+                    <h3>Dental Crowns</h3>
+                    <p>A protective cap placed over a damaged or weakened
+                        tooth to restore its shape, size, and
+                        strength. It improves tooth functionality and
+                        appearance.</p>
+                </div>
+                <div class="col-md-1 col-3">
+                    <img src="image/icon3.webp" class="service_img1" alt>
+                </div>
+                <div class="col-md-5 col-9 service_text">
+                    <h3>Laser Dentistry</h3>
+                    <p>A minimally invasive dental treatment using focused
+                        light beams for procedures like gum reshaping
+                        and cavity removal. It offers less pain and faster
+                        healing.</p>
+                </div>
+                <div class="col-md-1 col-3">
+                    <img src="image/icon4.webp" class="service_img1" alt>
+                </div>
+                <div class="col-md-5 col-9 service_text">
+                    <h3>Clear Aligners/ Invisible Braces</h3>
+                    <p>Transparent, removable trays that gradually
+                        straighten teeth without the need for metal braces.
+                        They provide a discreet and comfortable orthodontic
+                        solution.</p>
+                </div>
+                <div class="col-md-1 col-3">
+                    <img src="image/icon5.webp" class="service_img1" alt>
+                </div>
+                <div class="col-md-5 col-9 service_text">
+                    <h3>Dental Fillings/ Teeth Fillings</h3>
+                    <p>Material used to restore teeth damaged by decay,
+                        restoring normal function and shape. It prevents
+                        further tooth deterioration.</p>
+                </div>
+                <div class="col-md-1 col-3">
+                    <img src="image/icon6.webp" class="service_img1" alt>
+                </div>
+                <div class="col-md-5 col-9 service_text">
+                    <h3>Wisdom Teeth Removal</h3>
+                    <p>Surgical extraction of problematic wisdom teeth
+                        causing pain, crowding, or infection. It helps
+                        maintain oral health and prevents complications</p>
+                </div>
+                <div class="col-md-1 col-3">
+                    <img src="image/icon7.webp" class="service_img1" alt>
+                </div>
+                <div class="col-md-5 col-9 service_text">
+                    <h3>Braces & Aligners</h3>
+                    <p>Orthodontic treatment using brackets and wires to
+                        correct crooked or misaligned teeth for a
+                        better bite and smile. It improves dental function
+                        and aesthetics.</p>
+                </div>
+                <div class="col-md-1 col-3">
+                    <img src="image/icon8.webp" class="service_img1" alt>
+                </div>
+                <div class="col-md-5 col-9 service_text">
+                    <h3>Dental Implants/ Teeth Implants</h3>
+                    <p>A permanent titanium post surgically placed in the
+                        jawbone to replace missing teeth. It provides
+                        a strong foundation for crowns, bridges, or
+                        dentures.</p>
+                </div>
+                <div class="col-md-1 col-3">
+                    <img src="image/icon9.webp" class="service_img1" alt>
+                </div>
+                <div class="col-md-5 col-9 service_text">
+                    <h3>Dentures</h3>
+                    <p>Removable prosthetic teeth designed to replace
+                        missing teeth and restore your smile. They improve
+                        chewing ability and facial structure.</p>
+                </div>
+                <div class="col-md-1 col-3">
+                    <img src="image/icon10.webp" class="service_img1" alt>
+                </div>
+                <div class="col-md-5 col-9 service_text">
+                    <h3>Kids Dentistry</h3>
+                    <p>Specialized dental care focused on children’s oral
+                        health and development. Provides gentle,
+                        preventive, and corrective treatments tailored for
+                        kids.</p>
+                </div>
+                <div class="col-md-1 col-3">
+                    <img src="image/icon11.webp" class="service_img1" alt>
+                </div>
+                <div class="col-md-5 col-9 service_text">
+                    <h3>Mouth Ulcers</h3>
+                    <p>Painful sores inside the mouth caused by injury,
+                        stress, or infections. Treatment focuses on
+                        relief and promoting faster healing.</p>
+                </div>
+                <div class="col-md-1 col-3">
+                    <img src="image/icon12.webp" class="service_img1" alt>
+                </div>
+                <div class="col-md-5 col-9 service_text">
+                    <h3>Advanced Gum Treatment</h3>
+                    <p>Specialized care for gum diseases like periodontitis
+                        to stop infection and regenerate healthy
+                        tissue. It preserves teeth and supports overall oral
+                        health.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- one image section -->
+
+    <section class="one_image">
+        <div class="parallax-bg">
+            <h1 class="have_any">Have Any Dental Problem?</h1>
+            <a href><button class="btn btn-primary">Book
+                    Appointment</button></a>
+        </div>
+    </section>
+
+    <!-- we are always section -->
+
+    <section class="we_are_always">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="always">We're Always Prepared to Take on Any
+                        Challange</h1>
+                </div>
+                <div class="col-md-1 col-2">
+                    <img src="image/tick.webp" class="tick1" alt>
+                </div>
+                <div class="col-md-5 col-10">
+                    <p class="heading">Experienced Dental Professionals</p>
+                    <p class="always1">Our skilled team of dentists and
+                        hygienists bring years of clinical experience
+                        and a gentle approach to every treatment.</p>
+                </div>
+                <div class="col-md-1 col-2">
+                    <img src="image/tick.webp" class="tick2" alt>
+                </div>
+                <div class="col-md-5 col-10">
+                    <p class="heading">Patient-Centered Care</p>
+                    <p class="always1">LWe listen to your needs, understand
+                        your concerns, and tailor every treatment
+                        plan to suit your comfort and goals.</p>
+                </div>
+
+                <div class="col-md-1 col-2">
+                    <img src="image/tick.webp" class="tick1" alt>
+                </div>
+                <div class="col-md-5 col-10">
+                    <p class="heading">Advanced Technology</p>
+                    <p class="always1">From digital X-rays to pain-free
+                        procedures, we use the latest tools to ensure
+                        safe, precise, and efficient dental care.</p>
+                </div>
+                <div class="col-md-1 col-2">
+                    <img src="image/tick.webp" class="tick2" alt>
+                </div>
+                <div class="col-md-5 col-10">
+                    <p class="heading">Family-Friendly Environment</p>
+                    <p class="always1">Whether it’s your child’s first
+                        check-up or a routine visit for seniors, we offer
+                        compassionate care for every age group</p>
+                </div>
+
+                <div class="col-md-1 col-2">
+                    <img src="image/tick.webp" class="tick1" alt>
+                </div>
+                <div class="col-md-5 col-10">
+                    <p class="heading">Focus on Prevention & Education</p>
+                    <p class="always1">We don’t just treat — we teach. Our
+                        goal is to help you maintain long-term oral
+                        health with the right habits and guidance.</p>
+                </div>
+                <div class="col-md-1 col-2">
+                    <img src="image/tick.webp" class="tick2" alt>
+                </div>
+                <div class="col-md-5 col-10">
+                    <p class="heading">Comfort & Convenience</p>
+                    <p class="always1">With flexible appointment slots, easy
+                        booking, and a relaxing clinic ambiance, we
+                        make dental visits smooth and stress-free.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Before after section -->
+
+    <section class="bef_aft">
+        <div class="container">
+            <h1 class="our_happy">Our Happy Customers</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="slider-container">
+                        <div class="img-wrapper before">
+                            <img src="image/before_img1.webp" alt="Before">
+                        </div>
+                        <div class="img-wrapper after">
+                            <img src="image/after_img1.webp" alt="After">
+                        </div>
+                        <div class="line"></div>
+                        <input class="slider" type="range" min="0" max="100" value="50">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="slider-container">
+                        <div class="img-wrapper before">
+                            <img src="image/before_img2.webp" alt="Before">
+                        </div>
+                        <div class="img-wrapper after">
+                            <img src="image/after_img2.webp" alt="After">
+                        </div>
+                        <div class="line"></div>
+                        <input class="slider" type="range" min="0" max="100" value="50">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="slider-container">
+                        <div class="img-wrapper before">
+                            <img src="image/before_img3.webp" alt="Before">
+                        </div>
+                        <div class="img-wrapper after">
+                            <img src="image/after_img3.webp" alt="After">
+                        </div>
+                        <div class="line"></div>
+                        <input class="slider" type="range" min="0" max="100" value="50">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="slider-container">
+                        <div class="img-wrapper before">
+                            <img src="image/before_img4.webp" alt="Before">
+                        </div>
+                        <div class="img-wrapper after">
+                            <img src="image/after_img4.webp" alt="After">
+                        </div>
+                        <div class="line"></div>
+                        <input class="slider" type="range" min="0" max="100" value="50">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact form section -->
+
+    <section class="contact_form" id="contact_us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 contact_col1">
+                    <h1 class="make_text">Make an appointment
+                        with an Dentist</h1>
+                    <a href="https://wa.me/919600492308?text=Hello, I would like to book an appointment with the doctor. Please let me know the available slots."
+                        class="btn d-inline-flex align-items-center gap-2" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            viewBox="0 0 448 512" class="whatsapp_icon">
+                            <path
+                                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                        </svg>
+                        <span class="chat_with">Chat With Us</span>
+                    </a>
+                </div>
+                <div class="col-lg-6 contact_col2">
+                    <p>Contact Us</p>
+                    <img src="image/smile.png" alt="">
+                    <form class="contact_us_form" id="contact-form">
+                        <div class="line"></div>
+
+                        <!-- Hidden timestamp field -->
+                        <input type="hidden" id="current_time" name="current_time">
+
+                        <div class="mb-3">
+                            <input type="text" id="name" name="name" class="form-control form_crl"
+                                placeholder="Your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" id="email" name="email" class="form-control form_crl"
+                                placeholder="Your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" id="phone" name="phone" class="form-control form_crl"
+                                placeholder="Your phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea id="message" name="message" class="form-control form_crl" rows="5"
+                                placeholder="Message" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary px-4 sub_btn">Submit</button>
+                        </div>
+                    </form>
+                    <p id="form-status" class="text-center mt-3"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 footer_col1">
+                    <h1 class="footer-brand"><img src="image/logo.svg" class="logo" alt>Dr.Sobi's Elite Dental Care
+                    </h1>
+                    <h5>4, Maanikkam Street, South Street (Near to Vasanth & co
+                        ), Aruppukkottai, Tamil Nadu 626101</h5>
+                    <p style="text-decoration: underline; text-underline-offset: 3px;">96004
+                        92308</p>
+                    <p style="text-decoration: underline; text-underline-offset: 3px;">sobielitedentalcare@gmail.com</p>
+                </div>
+                <div class="col-lg-2 footer_col2">
+                    <ul class="no-bullets">
+                        <h5 class="footer_h5">Quick Links</h5>
+                        <a href="#" class="custom-link">
+                            <li>About</li>
+                        </a> <a href="#" class="custom-link">
+                            <li>Services</li>
+                        </a> <a href="#" class="custom-link">
+                            <li>About Us</li>
+                        </a> <a href="#" class="custom-link">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+
+                </div>
+                <div class="col-lg-3 footer_col3">
+                    <ul class="no-bullets">
+                        <h5 class="footer_h5">Social Media Links</h5>
+                        <a href="#" class="custom-link">
+                            <li>Facebook</li>
+                        </a> <a href="#" class="custom-link">
+                            <li>X</li>
+                        </a> <a href="#" class="custom-link">
+                            <li>Linkedin</li>
+                        </a> <a href="#" class="custom-link">
+                            <li>Instagram</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-lg-3 text-center footer_col4">
+                    <a href="https://wa.me/919600492308" class="btn d-inline-flex align-items-center gap-2"
+                        target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            viewBox="0 0 448 512" class="whatsapp_icon">
+                            <path
+                                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                        </svg>
+                        <span>Chat With Us</span>
+                    </a>
+                </div>
+            </div>
+            <p class="rights">© 2025 . All rights reserved.</p>
+        </div>
+    </section>
+    <script>
+        document.querySelectorAll('.slider-container').forEach(container => {
+            const slider = container.querySelector('.slider');
+            const line = container.querySelector('.line');
+            const imgAfter = container.querySelector('.img-wrapper.after');
+
+            const updateSlider = () => {
+                const value = slider.value;
+                line.style.left = `${value}%`;
+                imgAfter.style.clipPath = `inset(0 0 0 ${value}%)`;
+            };
+
+            slider.addEventListener('input', updateSlider);
+
+            slider.addEventListener('dblclick', () => {
+                slider.value = 50;
+                updateSlider();
+            });
+
+            updateSlider();
+        });
+
+        window.addEventListener('DOMContentLoaded', function () {
+            emailjs.init("Z1aKiGWBMi9U7-z-Z");
+
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const statusEl = document.getElementById('form-status');
+                statusEl.textContent = "Sending...";
+
+                // Optional timestamp
+                const now = new Date();
+                const timeInput = document.getElementById('current_time');
+                if (timeInput) {
+                    timeInput.value = now.toLocaleString();
+                }
+
+                emailjs.sendForm('service_15ry1ab', 'template_b5w5v1r', this)
+                    .then(() => {
+                        statusEl.textContent = "✅ Message sent!";
+                        this.reset();
+                    }, (error) => {
+                        console.error('EmailJS Error:', error);
+                        statusEl.textContent = "❌ Error sending message. Please try again later.";
+                    });
+            });
+        });
+    </script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
